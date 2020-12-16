@@ -40,7 +40,7 @@ hdfs dfs -put datack
 
 Như vậy ta đã lưu trữ dữ liệu chứng khoán thành công, có thể xem cách hệ thống hdfs phân bố dữ liệu qua các lệnh hdfs trên namenode hoặc truy cập vào địa chỉ của namenode trên browser, trong trường hợp này là 0.0.0.0:9870 (tùy vào cổng được config trong file docker-compose, thường là 9870).
 
-
+![Screenshot](namenode.png)
 
 # Xử lý dữ liệu:
 
