@@ -29,14 +29,17 @@ Sử dụng image pyspark-notebook của jupyter để demo việc xử lý dữ
 
 # Lấy dữ liệu và lưu trữ:
 
-Đầu tiên lấy mã và tên của các công ty trên sàn chứng khoán của Mỹ trên trang web datahub.io (cụ thể: https://datahub.io/core/nasdaq-listings?fbclid=IwAR0D5ry2w-C19pSNThncNqPZqrzQ-iDuJ_fZ73qlfgSM8F9Ye6MPLPG6T5w#resource-nasdaq-listed-symbols). Sau đó xử lý và chỉ dữ lại mã của các công ty.
-Sử dụng danh sách mã đó để lấy thông tin chứng khoán theo ngày của các công ty trên trang https://www.alphavantage.co/. Dữ liệu của mỗi công ty được lưu vào một file .csv. Toàn bộ dữ liệu được chứa trong folder datack. Chuyển dữ liệu vào namenode bằng lệnh sau:
+Đầu tiên lấy mã và tên của các công ty trên sàn chứng khoán của Mỹ trên trang web eoddata.com (cụ thể: http://eoddata.com/symbols.aspx). Sau đó xử lý và chỉ dữ lại mã của các công ty. Sử dụng danh sách mã đó để lấy thông tin chứng khoán theo ngày của các công ty trên trang https://www.alphavantage.co/. Dữ liệu của mỗi công ty được lưu vào một file .csv. Toàn bộ dữ liệu được chứa trong folder datack. Chuyển dữ liệu vào namenode bằng lệnh sau:
 
+```
 docker cp ./datack container_id:datack
+```
 
 Sau đó put dữ liệu lên hdfs:
 
+```
 hdfs dfs -put datack 
+```
 
 Như vậy ta đã lưu trữ dữ liệu chứng khoán thành công, có thể xem cách hệ thống hdfs phân bố dữ liệu qua các lệnh hdfs trên namenode hoặc truy cập vào địa chỉ của namenode trên browser, trong trường hợp này là 0.0.0.0:9870 (tùy vào cổng được config trong file docker-compose, thường là 9870).
 
