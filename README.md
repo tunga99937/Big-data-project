@@ -5,7 +5,7 @@
 Nhóm 10:
 - Nguyễn Sơn Tùng 20173449
 - Lê Thành Sơn
-- Mai Đức Trung
+- Mai Đức Trung 20173417
 - Nguyễn Sĩ Hưởng
 - Hà Duy Hiếu 20173117
 
