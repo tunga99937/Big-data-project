@@ -25,7 +25,7 @@ Dữ liệu được lưu trữ trên một cụm HDFS bao gồm:
 # Công nghệ sử dụng:
  
 Dùng nền tảng docker để xây dựng hệ thống mô phỏng. Sử dụng các image của nhóm Big Data Europe (bde2020) để tạo ra namenode, các datanode, dịch vụ yarn, sparkmaster và các sparkworker. 
-Sử dụng image pyspark-notebook của jupyter để demo việc xử lý dữ liệu của cụm spark (xem file docker-compose.yml).
+Sử dụng image pyspark-notebook của jupyter để demo việc xử lý dữ liệu của cụm spark (xem file docker-compose.yml)
 
 # Lấy dữ liệu và lưu trữ:
 
@@ -47,7 +47,7 @@ Như vậy ta đã lưu trữ dữ liệu chứng khoán thành công, có thể
 
 # Xử lý dữ liệu:
 
-Việc demo thực thi xử lý dữ liệu được thực hiện trên pyspark-notebook, xem file Stock_price_demo.ipynb.
+Việc demo thực thi xử lý dữ liệu được thực hiện trên pyspark-notebook, xem file Stock_price_demo.ipynb trong thư mục notebook.
 
 
 
