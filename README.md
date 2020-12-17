@@ -23,7 +23,7 @@ Dữ liệu được lưu trữ trên một cụm HDFS bao gồm:
 Để lấy dữ liệu ra và xử lý, nhóm demo sử dụng một cụm spark gồm 1 Spark Master và 4 Spark Worker.
 
 # Công nghệ sử dụng:
- 
+Hadoop 3.2.1 và Spark 3.0.1
 Dùng nền tảng docker để xây dựng hệ thống mô phỏng. Sử dụng các image của nhóm Big Data Europe (bde2020) để tạo ra namenode, các datanode, dịch vụ yarn, sparkmaster và các sparkworker. 
 Sử dụng image pyspark-notebook của jupyter để demo việc xử lý dữ liệu của cụm spark (xem file docker-compose.yml)
 
